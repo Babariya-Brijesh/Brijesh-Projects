@@ -1,0 +1,294 @@
+html {
+  background-color: gainsboro;
+}
+
+.cityinformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 184px;
+  border: 3px solid black;
+  background-color: rgb(44, 41, 41);
+  color: white;
+  margin-top: 20px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.maininput .input {
+  width: 830px;
+}
+.maindiv {
+  display: flex;
+  flex-direction: column;
+}
+.citydiv {
+  display: flex;
+  justify-content: space-between;
+  width: 261px;
+}
+.cityname {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.citynamep1 {
+  font-size: 22px;
+  font-weight: bolder;
+}
+.citynamep2 {
+  margin-top: -25px;
+  font-size: 12px;
+}
+.citydetails {
+  display: flex;
+  justify-content: space-between;
+  width: 251px;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+.citydetailsp1 p {
+  margin: 0px 0px;
+  font-size: 11px;
+}
+.citydetailsp2 p {
+  margin: 0px 0px;
+  font-size: 11px;
+}
+.p1 {
+  color: rgb(44, 41, 41);
+}
+.temp h1 {
+  font-size: 50px;
+  margin: auto;
+}
+/* week details */
+
+.weekdiv {
+  border: 2px solid transparent;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  width: 800px;
+  height: 8px;
+  margin-bottom: 4px;
+  padding: 12px;
+}
+.weekdiv-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+}
+.weekdiv-label {
+  font-size: 12px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+.temp {
+  font-size: 12px;
+
+  display: flex;
+  justify-content: center;
+}
+.temp-label {
+  margin-right: 10px;
+  font-weight: 200;
+}
+.temp-c {
+  font-weight: 2000;
+  font-size: 11px;
+  color: rgb(164, 153, 153);
+}
+.weekhead {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.dayinformation {
+  animation-duration: 1.5s;
+  animation-name: changewidth;
+  animation-direction: alternate;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  padding: 11px;
+  transition: all 2s ease-in-out;
+}
+@keyframes changewidth {
+  from {
+    height: 10px;
+    opacity: -1;
+    /* transform: scaleY(1.5);
+    transition: all 2s ease-in-out; */
+  }
+
+  to {
+    height: 60px;
+    opacity: 1;
+    /* transform: scaleY(-1);
+    transition: all 2s ease-in-out; */
+  }
+}
+.informationSubdiv {
+  display: flex;
+  width: 830px;
+  justify-content: space-between;
+  font-size: 12px;
+  transition: all 2s ease-in-out;
+}
+.informationSubdiv2 {
+  display: flex;
+  width: 830px;
+  justify-content: space-between;
+  font-size: 12px;
+  transition: all 2s ease-in-out;
+}
+/* .accordion__panel2 {
+  
+  height: auto;
+  transition: all 2s ease-in-out;
+  transform: rotate(360deg);
+
+  transform: translateY(-20px);
+  transform: scaleY(1.5);
+}
+
+.accordion__panel {
+  height: auto;
+  transition: all 2s ease-in-out;
+
+  transform: rotate(360deg);
+  transform: scaleY(1.5);
+  transition-delay: 2s;
+} */
+.dayinformation-detail1 {
+  display: flex;
+  flex-direction: column;
+  transition: all 2s ease-in-out;
+}
+.dayinformation-detail1 label {
+  color: rgb(164, 153, 153);
+  padding: 3px;
+  transition: all 1s ease-in-out;
+}
+.dayinformation-detail2 {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+.dayinformation-detail2 label {
+  padding: 2px;
+  transition: all 1s ease-in-out;
+}
+.weekInfoMainDiv {
+  margin-top: 10px;
+}
+/* responsive */
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .maininput .input {
+    width: 331px;
+  }
+  .weekdiv {
+    border: 2px solid transparent;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 331px;
+    height: 8px;
+    margin-bottom: 4px;
+    padding: 12px;
+  }
+  .informationSubdiv {
+    display: flex;
+    width: 331px;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .maininput .input {
+    width: 609px;
+  }
+  .weekdiv {
+    border: 2px solid transparent;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 609px;
+    height: 8px;
+    margin-bottom: 4px;
+    padding: 12px;
+  }
+  .informationSubdiv {
+    display: flex;
+    width: 631px;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .maininput .input {
+    width: 242px;
+  }
+  .weekdiv {
+    border: 2px solid transparent;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 235px;
+    height: 8px;
+    margin-bottom: 4px;
+    padding: 12px;
+  }
+  .informationSubdiv {
+    display: flex;
+    width: 271px;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .cityinformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 151px;
+    border: 3px solid black;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+
+  .citydiv {
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    /* margin-top: 37px; */
+  }
+
+  .citydetails {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+  }
+}

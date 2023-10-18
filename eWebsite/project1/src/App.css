@@ -1,0 +1,106 @@
+/* ************** error css *********** */
+.error-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cartDrawer-checkOut-btn {
+  margin-top: 500px;
+}
+.cartDrawer-checkOut-btn button {
+  color: white;
+  background-color: rgb(102 102 239);
+  border-style: none;
+  padding: 10px 27px;
+}
+.cartdrawer-close-outline {
+  position: absolute;
+  top: 3%;
+  right: 9%;
+  font-size: 28px;
+}
+.colordiv {
+  background-color: #00000055;
+  z-index: 20;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+.cartnew-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 15%;
+  right: 0%;
+  background-color: #f6f8fa;
+  height: 80vh;
+  width: 24rem;
+  z-index: 999;
+
+  transition: all 3s ease-in-out;
+
+  animation-name: speed;
+  animation-duration: 1s;
+  /* animation-direction: alternate; */
+}
+
+@keyframes speed {
+  from {
+    width: 10px;
+    opacity: 0.3;
+    /* transform: translateX(0%); */
+  }
+  to {
+    width: 500px;
+    opacity: 1;
+    /* transform: translateX(100%); */
+  }
+}
+@media (max-width: 767px) {
+  .cartDrawer-checkOut-btn {
+    margin-top: 648px;
+  }
+  .cartnew-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: #f6f8fa;
+    height: 100vh;
+    width: 24rem;
+    z-index: 999;
+    /* transition: all 3s ease-in-out; */
+    animation-name: speed;
+    animation-duration: 1.5s;
+    /* animation-direction: alternate; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cartnew-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    right: 0%;
+    background-color: #f6f8fa;
+    height: 80vh;
+    width: 24rem;
+    z-index: 999;
+    /* transition: all 3s ease-in-out; */
+    animation-name: speed;
+    animation-duration: 1.5s;
+    /* animation-direction: alternate; */
+  }
+}
